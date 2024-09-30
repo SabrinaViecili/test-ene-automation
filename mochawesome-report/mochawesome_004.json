@@ -1,0 +1,161 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-09-30T17:31:55.958Z",
+    "end": "2024-09-30T17:31:57.322Z",
+    "duration": 1364,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "32dfb18e-fd25-48ba-92c4-7e73f4de357c",
+      "title": "",
+      "fullFile": "cypress/e2e/api/api.cy.js",
+      "file": "cypress/e2e/api/api.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8e136f7b-7b70-4212-b822-a1a1b775350c",
+          "title": "Testes da API - jsonplaceholder",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar requisição GET",
+              "fullTitle": "Testes da API - jsonplaceholder Validar requisição GET",
+              "timedOut": null,
+              "duration": 189,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_helper.default.getUsers().then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.be.an('array');\n  response.body.forEach(user => {\n    const valid = ajv.validate(userSchema, user);\n    expect(valid, ajv.errors).to.be.true;\n  });\n});",
+              "err": {},
+              "uuid": "5d6e496b-4b32-4069-b10c-4fb351a0edc5",
+              "parentUUID": "8e136f7b-7b70-4212-b822-a1a1b775350c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar requisição POST",
+              "fullTitle": "Testes da API - jsonplaceholder Validar requisição POST",
+              "timedOut": null,
+              "duration": 414,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const newUser = {\n  name: 'Firmina',\n  username: 'firmina_ina',\n  email: 'firmina@automacao.com',\n  address: {},\n  phone: '123-456-7890',\n  website: 'firmina.com',\n  company: {}\n};\n_helper.default.createUser(newUser).then(response => {\n  expect(response.status).to.eq(201);\n  expect(response.body).to.have.property('name', 'Firmina');\n  const valid = ajv.validate(userSchema, response.body);\n  expect(valid, ajv.errors).to.be.true;\n});",
+              "err": {},
+              "uuid": "1605507d-92f1-470e-9450-2c3cc9b4a002",
+              "parentUUID": "8e136f7b-7b70-4212-b822-a1a1b775350c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar requisição PUT",
+              "fullTitle": "Testes da API - jsonplaceholder Validar requisição PUT",
+              "timedOut": null,
+              "duration": 316,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const updatedUser = {\n  id: 1,\n  name: 'Firmina Updated',\n  username: 'firmina_updated',\n  email: 'firmina_updated@automacao.com',\n  address: {},\n  phone: '123-456-7890',\n  website: 'firmina_updated.com',\n  company: {}\n};\n_helper.default.updateUser(1, updatedUser).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.have.property('name', 'Firmina Updated');\n  const valid = ajv.validate(userSchema, response.body);\n  expect(valid, ajv.errors).to.be.true;\n});",
+              "err": {},
+              "uuid": "6ae4abc9-fe77-47bf-94e5-0258b8e46df5",
+              "parentUUID": "8e136f7b-7b70-4212-b822-a1a1b775350c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar requisição DELETE",
+              "fullTitle": "Testes da API - jsonplaceholder Validar requisição DELETE",
+              "timedOut": null,
+              "duration": 324,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_helper.default.deleteUser(1).then(response => {\n  expect(response.status).to.eq(200);\n});",
+              "err": {},
+              "uuid": "8c5d1ae1-effc-453c-b571-e81a7690830b",
+              "parentUUID": "8e136f7b-7b70-4212-b822-a1a1b775350c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5d6e496b-4b32-4069-b10c-4fb351a0edc5",
+            "1605507d-92f1-470e-9450-2c3cc9b4a002",
+            "6ae4abc9-fe77-47bf-94e5-0258b8e46df5",
+            "8c5d1ae1-effc-453c-b571-e81a7690830b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1243,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

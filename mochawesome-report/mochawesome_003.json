@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-09-30T17:31:45.540Z",
+    "end": "2024-09-30T17:31:53.663Z",
+    "duration": 8123,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1bc86756-f2c0-49a3-b979-4b07f6a1e308",
+      "title": "",
+      "fullFile": "cypress/e2e/clickAllButtons/index.cy.ts",
+      "file": "cypress/e2e/clickAllButtons/index.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4883e845-b608-4f71-8c65-4281ec6adaa9",
+          "title": "Testes da funcionalidade do Challenging DOM",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Clica nos três botões (base, bar, foo) e valida mudanças no canvas",
+              "fullTitle": "Testes da funcionalidade do Challenging DOM Clica nos três botões (base, bar, foo) e valida mudanças no canvas",
+              "timedOut": null,
+              "duration": 5854,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Define os seletores dos botões\nvar buttonSelectors = [\n    'a.button', // Botão \"base\"\n    'a.button.alert', // Botão \"bar\"\n    'a.button.success', // Botão \"foo\"\n];\n// Pega o estado inicial do canvas\nhelpers.getInitialCanvasState().then(function (initialCanvasState) {\n    // Chama o helper para clicar nos três botões\n    helpers.clickOnButtons(buttonSelectors);\n    // Valida a mudança no canvas após os cliques\n    helpers.validateCanvasChange(initialCanvasState);\n});",
+              "err": {},
+              "uuid": "88b344b0-0cfa-420b-8999-a057dcc8368a",
+              "parentUUID": "4883e845-b608-4f71-8c65-4281ec6adaa9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clica em todos os botões Edit e Delete da grid",
+              "fullTitle": "Testes da funcionalidade do Challenging DOM Clica em todos os botões Edit e Delete da grid",
+              "timedOut": null,
+              "duration": 2184,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Clica em todos os botões Edit\nhelpers.clickOnAllEditButtons();\n// Clica em todos os botões Delete\nhelpers.clickOnAllDeleteButtons();",
+              "err": {},
+              "uuid": "5b1ab74e-9135-4a49-9a72-a5b14423c28f",
+              "parentUUID": "4883e845-b608-4f71-8c65-4281ec6adaa9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "88b344b0-0cfa-420b-8999-a057dcc8368a",
+            "5b1ab74e-9135-4a49-9a72-a5b14423c28f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8038,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

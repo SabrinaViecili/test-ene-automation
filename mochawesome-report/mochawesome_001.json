@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-09-29T16:12:07.158Z",
+    "end": "2024-09-29T16:12:14.691Z",
+    "duration": 7533,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dd266b21-4cf6-4df3-9e21-68f8c502b09e",
+      "title": "",
+      "fullFile": "cypress/e2e/start/index.cy.ts",
+      "file": "cypress/e2e/start/index.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e926dc99-c98b-4a5f-8a3d-b568d1792999",
+          "title": "Testes da Funcionalidade de Renderização do Elemento Escondido",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar a exibição do texto \"Hello World!\" após clicar no botão Start",
+              "fullTitle": "Testes da Funcionalidade de Renderização do Elemento Escondido Validar a exibição do texto \"Hello World!\" após clicar no botão Start",
+              "timedOut": null,
+              "duration": 7465,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#start button').click();\ncy.get('#loading').should('be.visible');\ncy.get('#loading', { timeout: 10000 }).should('not.be.visible');\ncy.get('#finish h4').should('contain', 'Hello World!');",
+              "err": {},
+              "uuid": "eff387db-1923-4344-acbd-81362553c537",
+              "parentUUID": "e926dc99-c98b-4a5f-8a3d-b568d1792999",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eff387db-1923-4344-acbd-81362553c537"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7465,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+Funcionalidade: Módulo Oportunidades
+
+Cenário: Visualizar detalhes de uma oportunidade
+Dado que estou na página de oportunidades
+Quando clico em uma oportunidade específica
+Então a página de detalhes da oportunidade deve ser exibida com todas as informações relevantes
+
+Cenário: Acessar todas as oportunidades a partir  do link da seção oportunidades
+Dado que estou na página bloco de oportunidades
+Quando clico no link "VER TODAS AS OPORTUNIDADES”
+Então devo ser direcionado para a página de oportunidades, visualizando todas as oportunidades disponíveis
