@@ -1,10 +1,13 @@
 # Projeto de Automação de Testes
 
-Este projeto é uma **automação de testes end-to-end (e2e)** e **API** utilizando o **Cypress** para testar ambas funcionalidades. Para a realização do teste de API foi fornecida a URL (http://jsonplaceholder.typicode.com/users) onde o objetivo é validar as operações de **GET**, **POST**, **PUT** e **DELETE** no endpoint `/users`.
+Este projeto visa a automação de testes end-to-end (e2e) e de API utilizando o Cypress, com o objetivo de validar funcionalidades tanto de uma API quanto da interface de um site. Para a realização dos testes de API, utilizamos a URL http://jsonplaceholder.typicode.com/users, onde serão validadas as operações de GET, POST, PUT e DELETE no endpoint /users.
+
+Além disso, os cenários de testes foram desenvolvidos a partir da análise do protótipo solicitado e estão organizados na pasta integration, permitindo uma fácil navegação e manutenção.
+
 
 ## Objetivo do Projeto
 
-O objetivo deste projeto é desenvolver automações de testes utilizando o **Cypress** para validar funcionalidades tanto de uma API quanto da interface de um site. O projeto abrange dois cenários principais:
+O objetivo deste projeto é desenvolver automações de testes que garantam a funcionalidade e a qualidade tanto de uma API quanto da interface do usuário. 
 
 ### 1. Testes de API
 
@@ -47,13 +50,13 @@ Siga os passos abaixo para configurar o projeto:
 2. Acesse o diretório do projeto
    Navegue até a pasta do projeto que você acabou de clonar:
 ```
-cd <NOME_DA_PASTA>
+cd test-ene-automation
 ```
 3. Instale as dependências do projeto
    Execute o seguinte comando para instalar todas as dependências necessárias, incluindo o Cypress:
-
+```
 npm install
-
+```
 ## Execução dos Testes
 
 Após a instalação e configuração, você pode executar os testes de duas maneiras diferentes:

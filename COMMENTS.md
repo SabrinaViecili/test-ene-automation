@@ -19,8 +19,6 @@ O projeto utilizou as seguintes bibliotecas de terceiros:
 
 ### Melhorias Futuras
 
-### Melhorias Futuras
-
 Se eu tivesse mais tempo, algumas melhorias que consideraria implementar incluem:
 
 1. **Cobertura de Testes Aumentada**: Adicionar mais casos de teste, incluindo testes de borda e cenários de erro para cobrir uma maior variedade de situações.
