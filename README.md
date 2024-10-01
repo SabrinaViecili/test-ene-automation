@@ -31,7 +31,7 @@ Antes de iniciar, certifique-se de que você possui as seguintes ferramentas ins
 
 1. **Node.js**: Você pode baixar e instalar o Node.js em [nodejs.org](https://nodejs.org/).
 2. **npm**: O npm é instalado automaticamente com o Node.js e é utilizado para gerenciar dependências.
-3. **Node.js**: Você pode baixar e instalar o git em (https://git-scm.com/downloads).
+3. **git**: Você pode baixar e instalar o git em (https://git-scm.com/downloads).
 
 Para verificar se o Node.js, o npm e o git estão instalados, execute os seguintes comandos no terminal:
 ```
@@ -47,13 +47,11 @@ Siga os passos abaixo para configurar o projeto:
 ```
    git clone https://github.com/SabrinaViecili/test-ene-automation.git
 ```
-2. Acesse o diretório do projeto
-   Navegue até a pasta do projeto que você acabou de clonar:
+2. Acesse o diretório do projeto navegando até a pasta que você acabou de clonar:
 ```
 cd test-ene-automation
 ```
-3. Instale as dependências do projeto
-   Execute o seguinte comando para instalar todas as dependências necessárias, incluindo o Cypress:
+3. Instale as dependências do projeto executando o seguinte comando para instalar todas as dependências necessárias, incluindo o Cypress:
 ```
 npm install
 ```
@@ -61,14 +59,14 @@ npm install
 
 Após a instalação e configuração, você pode executar os testes de duas maneiras diferentes:
 
-1. Modo Gráfico
+1. Modo Gráfico -
    Para rodar os testes em uma interface gráfica, use o seguinte comando:
 ```
 npx cypress open
 ```
 Isso abrirá o Cypress, onde você poderá visualizar e selecionar quais testes deseja executar. A interface permite que você veja os resultados em tempo real.
 
-2. Modo Headless
+2. Modo Headless -
    Para rodar os testes em segundo plano (sem interface gráfica), utilize o seguinte comando:
 ```
 npx cypress run
